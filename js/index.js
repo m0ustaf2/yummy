@@ -2,12 +2,16 @@ let mealData=document.getElementById('mealData');
 let searchContainer=document.getElementById('searchContainer')
 let submitBtn;
 
+// $("document").ready(function () {
+//     $("#loading").fadeOut(1000, function () {
+//       $("body").css("overflow", "visible");
+//     });
+//   });
+
 $(document).ready(()=>{
     searchByName('').then(()=>{
-        $('.loading-screen').fadeOut(500)
+        $('.loading-screen').fadeOut(1000)
         $('body').css('overflow','visible')
-    
-
     })
 
 })
